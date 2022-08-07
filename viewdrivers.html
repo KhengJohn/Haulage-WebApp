@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body-content">
+            <div class="side-nav">
+                <div class="logo-div">
+                    <h2>HAULAGE</h2>
+                    <div class="closenav hamburgerb">
+                        <div class="line1a"></div>
+                        <div class="line2b"></div> 
+                    </div>
+                </div> 
+                
+                <div class="nav-content">
+                    <ul>
+                    <li class="nav-link">Dashbord</li>
+                    <li class="nav-link">Driver</li>
+                    <li class="nav-link">Rider</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="header">
+                    <div class="header-sec_i">
+                        <div class="header-sec_ia">
+                            <div id="nav-icon"  class="hamburger">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="line3"></div>
+                              </div>
+                             <!-- <input class="gen-search"  type="search" placeholder="Search"> -->
+                        </div>
+                        <div class="header-sec_ib">
+                          
+                         </div>
+
+                    </div>
+                    <div class="header-sec_ii">
+                       
+                        </div>
+                </div>
+                 <div class="driver-div">
+                    <h3>Dashbord / View Driver</h3>
+
+                 </div>
+
+                 <div class="number-drr">
+                    <div class="nd number-divers">
+                        <p>Total Driver</p>
+                        <span class="number-drrr">3K</span>
+
+                    </div>
+                    <div class="nd number-riders">
+                        <p>Active Driver</p>
+                        <span class="number-drrr">2.7K</span>
+
+                    </div>
+                    <div class="nd number-riders">
+                        <p>Non-Active Driver</p>
+                        <span class="number-drrr">300</span>
+
+                    </div>
+                    <div class="nd number-reports">
+                        <p>Blocked Drivers</p>
+                        <span class="number-drrr">18</span>
+
+                    </div>
+                 </div>
+
+                 <div class="sortby">
+                    <input type="text" id="search-input" class="search-driver" placeholder="Search">
+
+                 </div>
+
+                 <div class="driver-list">
+                    <table class="mytable"  >
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone Nunber</th>
+                            <th>Vechicle Type</th>
+                            <th>View</th>
+                        </tr>
+                        <tbody id="myTable">
+                       
+                        </tbody>
+                        <div id="open-modal" class="modal-window">
+                            <div>
+                              <a href="#" title="Close" class="modal-close">Close</a>
+                              <h1>Driver Information</h1>
+                              <h2 class="driver-id">Driver ID: 001/07/22</h2>
+                              <div> 
+                                <ul>
+                                    <li id="namea"> <b>Name:</b> John Idoko </li>
+                                    <li id="tel"> <b>Phone Number:</b> 07036060982 </li>
+                                    <li id="email"> <b>Email:</b> idokojohn42@yahoo.com </li>
+                                    <li id="idType"> <b>Identification Type:</b> NIN </li>
+                                    <li id="idNo"> <b>Identification Number:</b> ********** </li>
+                                    <li id="vehicleType"> <b>Vehicle Type:</b> Tesla 2022 </li>
+                                    <li id="vehiclePlateNo"> <b>Vehicle Plate Noumber:</b> TSL982BNU </li>
+                                </ul>
+                              </div>
+                              <br>
+                              <div class="sus-button">
+                                <a class="btn btn-danger" href="">Suspend</a>
+                                <a class="btn btn-block" href="">block</a>
+                            </div>
+                             
+                            </div>
+                          </div>
+
+                    </table>
+                 </div>
+
+              
+            </div> 
+            
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
