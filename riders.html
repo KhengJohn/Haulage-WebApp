@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -58,28 +60,81 @@
                         
                     </div>
                 </div>
-                 <div class="welcome-div">
+                 <div class="driver-div">
+                    <h3> <a href="index.html">Dashboard</a> / View Riders</h3>
 
                  </div>
 
                  <div class="number-drr">
                     <div class="nd number-divers">
-                        <p><a href="viewdrivers.html">View Driver</a></p>
+                        <p>Total Riders</p>
                         <span class="number-drrr">3K</span>
+
                     </div>
                     <div class="nd number-riders">
-                        <p><a href="riders.html">View Rider</a></p>
-                        <span class="number-drrr">30K</span>
+                        <p>Active Riders</p>
+                        <span class="number-drrr">2.7K</span>
+
                     </div>
                     <div class="nd number-riders">
-                        <p><a href="viewdrivers.html">Ride History</a></p>
-                        <span class="number-drrr">300K</span>
+                        <p>Non-Active Riders</p>
+                        <span class="number-drrr">300</span>
+
                     </div>
                     <div class="nd number-reports">
-                        <p><a href="viewdrivers.html">View Reports</a></p>
-                        <span class="number-drrr">30</span>
+                        <p>Blocked Riders</p>
+                        <span class="number-drrr">18</span>
+
                     </div>
                  </div>
+
+                 <div class="sortby">
+                    <p>Search Rider</p>
+                    <input type="text" id="search-input" class="search-driver" placeholder="Search">
+
+                 </div>
+
+                 <div class="driver-list">
+                    <table class="mytable"  >
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone Nunber</th>
+                            <th>Vechicle Type</th>
+                            <th>Status</th>
+                            <th>View</th>
+                        </tr>
+                        <tbody id="myTable">
+                       
+                        </tbody>
+                        <div id="open-modal" class="modal-window">
+                            <div>
+                              <a href="#" title="Close" class="modal-close">Close</a>
+                              <h1>Driver Information</h1>
+                              <h2 class="driver-id">Driver ID: 001/07/22</h2>
+                              <div> 
+                                <ul>
+                                    <li id="namea"> <b>Name:</b> John Idoko </li>
+                                    <li id="tel"> <b>Phone Number:</b> 07036060982 </li>
+                                    <li id="email"> <b>Email:</b> idokojohn42@yahoo.com </li>
+                                    <li id="idType"> <b>Identification Type:</b> NIN </li>
+                                    <li id="idNo"> <b>Identification Number:</b> ********** </li>
+                                    <li id="vehicleType"> <b>Vehicle Type:</b> Tesla 2022 </li>
+                                    <li id="vehiclePlateNo"> <b>Vehicle Plate Noumber:</b> TSL982BNU </li>
+                                </ul>
+                              </div>
+                              <br>
+                              <div class="sus-button">
+                                <a class="btn btn-danger" href="">Suspend</a>
+                                <a class="btn btn-block" href="">block</a>
+                            </div>
+                             
+                            </div>
+                          </div>
+
+                    </table>
+                 </div>
+
+              
             </div> 
             
     </div>
